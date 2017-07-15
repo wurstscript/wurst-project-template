@@ -1,5 +1,6 @@
+When running from vscode, these arguments will be passeds to the compiler
+Any line starting with "-" will be parsed as an argument.
+
 -runcompiletimefunctions
 -injectobjects
--opt
--inline
--uncheckedDispatch
+-stacktraces
