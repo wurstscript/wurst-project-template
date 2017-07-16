@@ -1,0 +1,4 @@
+package Hello
+
+init
+	print("Hello World")
