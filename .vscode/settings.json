@@ -4,5 +4,6 @@
     "wurst.wc3path": "%gamepath%",
 	"files.associations": {
         "wurst.build": "yaml"
-    }
+    },
+	"search.useIgnoreFiles": false
 }
