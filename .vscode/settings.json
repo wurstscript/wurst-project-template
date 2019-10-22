@@ -1,7 +1,5 @@
 {
-    "wurst.wurstJar": "%wurstjar%",
-    "wurst.javaOpts": ["-XX:+UseG1GC", "-XX:+UseStringDeduplication", "-XX:+AggressiveOpts", "-Xmx1G"],
-    "wurst.wc3path": "%gamepath%",
+  "wurst.javaOpts": ["-XX:+UseG1GC", "-XX:+UseStringDeduplication", "-XX:+AggressiveOpts", "-Xmx1G"],
 	"files.associations": {
         "wurst.build": "yaml"
     },
