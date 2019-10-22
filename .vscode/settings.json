@@ -5,5 +5,8 @@
 	"files.associations": {
         "wurst.build": "yaml"
     },
-	"search.useIgnoreFiles": false
+	"search.useIgnoreFiles": false,
+  "yaml.schemas": {
+    "./.vscode/wbschema.json": "/wurst.build",
+  }
 }
