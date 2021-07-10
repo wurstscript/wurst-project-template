@@ -1,5 +1,5 @@
 {
-  "wurst.javaOpts": ["-XX:+UseG1GC", "-XX:+UseStringDeduplication", "-XX:+AggressiveOpts", "-Xmx1G"],
+  "wurst.javaOpts": ["-XX:+UseG1GC", "-XX:+UseStringDeduplication", "-Xmx1G"],
 	"files.associations": {
         "wurst.build": "yaml"
     },
