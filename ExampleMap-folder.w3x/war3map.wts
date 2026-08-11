@@ -1,0 +1,55 @@
+﻿STRING 1
+{
+Player 1
+}
+
+STRING 2
+{
+Force 1
+}
+
+STRING 3
+// Units: xdum (Effect Dummy Unit), Name (Name (unam))
+{
+Effect Dummy Unit
+}
+
+STRING 4
+// Units: xdum (Effect Dummy Unit), EditorSuffix (Name - Editor Suffix (unsf))
+{
+(Basics)
+}
+
+STRING 5
+// Abilities: !e@$ (Leave Detect), Name (Name (anam))
+{
+Leave Detect
+}
+
+STRING 6
+// Abilities: !e@$ (Leave Detect), EditorSuffix (Editor Suffix (ansf))
+{
+(OnUnitEnterLeave)
+}
+
+STRING 7
+// Abilities: dont (Dummy Event Ability), Name (Name (anam))
+{
+Dummy Event Ability
+}
+
+STRING 8
+{
+Wurst Example Map
+}
+
+STRING 9
+{
+Any
+}
+
+STRING 10
+{
+Wurst Team
+}
+
