@@ -1,9 +1,34 @@
 package Hello
 
-/* Hello and welcome to Wurst!
-This is just a demo package. 
-You can modify it to tests things out 
-and then later delete it and create your own, new packages.
-Enjoy WurstScript? Consider starring our repo https://github.com/wurstscript/WurstScript */ 
+import UnitObjEditing
+import ObjectIdGenerator
+import UnitIds
+import Icons
+import Units
+import ClosureTimers
+
+// Welcome to Wurst! Change the assets below to explore VS Code's inline previews.
+// More examples: https://wurstlang.org/tutorials
+constant GREETER_ID = compiletime(UNIT_ID_GEN.next())
+
+// Generate a custom unit at compile time: no Object Editor required.
+@compiletime function createGreeter()
+    new UnitDefinition(GREETER_ID, UnitIds.footman)
+    ..setName("Wurst Greeter")
+    ..setIconGameInterface(Icons.bTNFootman)
+    ..setModelFile(Units.footman1)
+    ..setTooltipExtended("Hello World! This unit was made entirely in Wurst.")
+    ..setFoodCost(0)
+
 init
-	print("Hello World")
+    let owner = Player(0)
+    // Vectors make positions easy to work with; '..' chains calls on the same unit.
+    let greeter = createUnit(owner, GREETER_ID, owner.getStartLocation() + vec2(128, 0))
+        ..setInvulnerable(true)
+
+    print("Hello World! Your Wurst Greeter is ready to explore.")
+
+    // This closure captures 'greeter'. The one-shot timer cleans itself up.
+    doAfter(2.0) ->
+        greeter.setAnimation("stand victory")
+        print(greeter.getName() + ": Try changing my name, model, or icon in Hello.wurst!")
