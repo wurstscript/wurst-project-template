@@ -23,12 +23,12 @@ dependencies:
 ```
 
 Then run `grill install`. Open `wurst/Hello.wurst` and use the play button to run
-the example, or build a distributable map with `grill build ExampleMap.w3x`.
+the example, or build a distributable map with `grill build ExampleMap-folder.w3x`.
 Build output goes in `_build/`.
 
 ## Map and imports
 
-`ExampleMap.w3x/` is an unpacked map directory. Keep the `.w3x` suffix: Wurst
+`ExampleMap-folder.w3x/` is an unpacked map directory. Keep the `.w3x` suffix: Wurst
 recognizes it as a map, and builds a packed `.w3x` for distribution. Commit the
 directory's contents, and edit its map data using the World Editor or the Wurst
 extension. See the [map folder guide](https://wurstlang.org/news/map-folders-mpq-lua-guardrails.html).
@@ -46,6 +46,6 @@ runs quick and easier to debug. See the [Wurst manual](https://wurstlang.org/man
 
 ## Template distribution
 
-Grill currently selects the `map-folder` branch for folder projects and `master`
-for archive projects. Coordinate branch updates with Grill before publishing a
-folder template on `master`, so `--map-format archive` still receives an archive.
+`grill generate` supports `--map-format folder|archive` and defaults to folder
+mode for Reforged. It selects the `map-folder` branch for folder projects and
+`master` for archive projects.
