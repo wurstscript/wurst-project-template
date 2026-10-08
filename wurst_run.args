@@ -15,7 +15,7 @@ Optimization arguments (enabled for builds, skipped for runs):
 +opt
 +localOptimizations
 
-Lua mode (experimental):
+Optional Lua output (add "-" to enable; Grill sets the project's script mode during generation):
 
 lua
 
