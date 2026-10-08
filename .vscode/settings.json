@@ -1,10 +1,9 @@
 {
   "wurst.javaOpts": ["-XX:+UseStringDeduplication", "-Xmx4G"],
-	"files.associations": {
-        "wurst.build": "yaml"
-    },
-	"search.useIgnoreFiles": false,
-  "yaml.schemas" : {
-    "./.vscode/wbschema.json" : "/wurst.build"
+  "files.associations": {
+    "wurst.build": "yaml"
+  },
+  "yaml.schemas": {
+    "./.vscode/wbschema.json": "/wurst.build"
   }
 }

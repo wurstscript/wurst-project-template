@@ -1,6 +1,7 @@
 When running from vscode, all arguments in this file will be passed to the compiler.
-Any line starting with "-" in this file counts as an argument.
-This means to disable or enable any flag, remove or add the "-" at the start of the line.
+Any line starting with "-" counts as an argument for both running and building.
+Any line starting with "+" counts as a build-only argument; the "+" is replaced with "-" when passed to the compiler.
+This means to disable or enable any flag, remove or add the prefix at the start of the line.
 
 Following are the default enabled arguments:
 
@@ -8,13 +9,13 @@ Following are the default enabled arguments:
 -injectobjects
 -stacktraces
 
-Optimization arguments (default disabled):
+Optimization arguments (enabled for builds, skipped for runs):
 
-inline
-opt
-localOptimizations
++inline
++opt
++localOptimizations
 
-Lua mode (experimental):
+Optional Lua output (add "-" to enable; Grill sets the project's script mode during generation):
 
 lua
 
